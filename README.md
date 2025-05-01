@@ -10,6 +10,7 @@ A RESTful API built with **Java Spring Boot** for managing recipes, users, and a
 - Role-based access control (Admin & regular users)
 - CRUD operations for recipes
 - Settings for recipe category, Ingredients, and UOM (CRUD)
+- Image upload and retrieval
 - User registration and login
 - Pagination and search for recipe listings
 - PostgreSQL database integration
