@@ -78,6 +78,10 @@ Login endpoint: POST /api/v1/auth/login
 }
 ```
 
+## 📚 Swagger UI Endpoint
+
+- http://localhost:8080/swagger-ui/index.html
+
 ## 📚 Example Endpoints
 
 | Method | Endpoint                         | Description                |
