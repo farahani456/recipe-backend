@@ -14,6 +14,7 @@ A RESTful API built with **Java Spring Boot** for managing recipes, users, and a
 - User registration and login
 - Pagination and search for recipe listings
 - PostgreSQL database integration
+- Open API documentation
 
 ---
 
@@ -28,13 +29,10 @@ A RESTful API built with **Java Spring Boot** for managing recipes, users, and a
 
 ---
 
-## Configuration
+## 📝 Database Setup
 
-1. **application.properties:**
-2. **Create table:**
-   - go to src/main/resources/table
-   - execute all create\_\* table
-   - execute alter_table_add_constraints
+- Create table: In src/main/resources/table, execute the create\_\* table scripts.
+- Add constraints: Execute the alter_table_add_constraints scripts.
 
 ## 🔧 Setup & Run
 
@@ -61,7 +59,7 @@ A RESTful API built with **Java Spring Boot** for managing recipes, users, and a
 
 Login endpoint: POST /api/v1/auth/login
 
-- General User
+- General User Login Example
 
 ```
 {
@@ -70,7 +68,7 @@ Login endpoint: POST /api/v1/auth/login
 }
 ```
 
-- Admin
+- Admin Login Example
 
 ```
 {
@@ -79,9 +77,12 @@ Login endpoint: POST /api/v1/auth/login
 }
 ```
 
-## 📚 Swagger UI Endpoint
+## 🌍 Deployed Application
 
-- http://localhost:8080/swagger-ui/index.html
+### The application is live on Render. You can access the API and Swagger UI at the following links:
+
+- Live API: https://recipe-backend-2ubw.onrender.com
+- Swagger UI: https://recipe-backend-2ubw.onrender.com/swagger-ui/index.html
 
 ## 📚 Example Endpoints
 
@@ -92,3 +93,9 @@ Login endpoint: POST /api/v1/auth/login
 | POST   | /api/v1/recipes/create           | Create recipe (admin only) |
 | PUT    | /api/v1/recipes/{id}/update      | Update recipe (admin only) |
 | DELETE | /api/v1/recipes/{id}/soft-delete | Delete recipe (admin only) |
+
+## 🔧 Notes
+
+### The Swagger UI is available both locally and on the live server for easy API testing.
+
+- The Live API is hosted on Render and should be fully operational. All POST/GET requests should be made to the live endpoint.
